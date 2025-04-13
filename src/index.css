@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Rose Angel';
+  src: url('./assets/fonts/roseangel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* body {
+  font-family: 'Rose Angel', sans-serif;
+} */
+ body{
+  font-family: "Comfortaa", sans-serif;
+ }
+h2{
+  font-family: 'Rose Angel', sans-serif;
+  font-size: 40px;
+}
+h3{
+  font-family: 'Rose Angel', sans-serif;
+  font-size: 30px;
+}
+p{
+  font-size: 16px;
+  line-height: 30px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.section-poadding{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.primary-button{
+  background-color: #477E24;
+  padding: 10px 25px;
+  border: 0;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.primary-button:hover{
+  padding: 7px 20px;
+}
+.theme-txt-color{
+  color:#477E24;
+}
+.nav-grp{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 85%);
+}
+.hero-banner-grp .swiper-slide {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-banner-grp .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Optional: use contain if you don’t want cropping */
+  display: block;
+}
+
+
+
+.custom-backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal .modal-content {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+/* Modal Background Blur */
+.custom-backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Transparent modal */
+.custom-modal .modal-content {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Wrapper for position control */
+.modal-image-wrapper {
+  position: relative;
+}
+
+/* Modal Close Button */
+.modal-close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1050;
+}
+
+/* Navigation Arrows */
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 33px;
+  color: #000;
+  padding: 2px 22px;
+  cursor: pointer;
+  z-index: 1050;
+  transform: translateY(-50%);
+  background-color: rgba(255,219,88,0.5);
+  border-radius: 100px;
+}
+
+.modal-arrow-left {
+  left: 15px;
+}
+
+.modal-arrow-right {
+  right: 15px;
+}
+
+/* Optional: image styling (already responsive via Bootstrap) */
+.modal-image {
+  display: block;
+}
+
+label{
+  color: #989898;
+  font-size: 15px;
+}
+input{
+  background-color: #E9E9E9;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(71,126,36,0.10);
+  width: 100%;
+  font-size: 14px;
+  height: 43px;
+}
+input:focus-visible{
+  border: 1px solid #477E24;
+  outline: #477E24;
+}
