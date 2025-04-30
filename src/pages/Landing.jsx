@@ -6,6 +6,7 @@ import { Modal } from "react-bootstrap";
 import BgOne from "../assets/images/bgone.jpg";
 import portrait from "../assets/images/portrait.jpg";
 import whychoose from "../assets/images/whychoose.png";
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   const images = [
@@ -95,7 +96,7 @@ const Landing = () => {
       <section className="section-poadding">
         <div className="container">
           <h2 className="text-center">
-            <span className="theme-txt-color">About</span> Us
+            <span>About</span> Us
           </h2>
           <p className="text-center mt-3">
             It is a long established fact that a reader will be distracted by
@@ -108,31 +109,31 @@ const Landing = () => {
             sites still in their infancy.
           </p>
           <div className="text-center mt-4">
-            <button className="primary-button text-center">Contact</button>
+            <Link className="primary-button text-center" to="/contactus">Contact</Link>
           </div>
         </div>
       </section>
       <section className="section-poadding">
         <div className="container">
           <h2 className="text-center">
-            Selected <span className="theme-txt-color">Works</span>
+            Selected <span>Works</span>
           </h2>
-          <div className="row mt-4">
+          <div className=" mt-4">
             <div className="row">
               {[0, 2, 4, 6].map((startIndex, col) => (
-                <div className="col-lg-3 px-1" key={col}>
+                <div className="col-6 col-lg-3 px-1 mt-2" key={col}>
                   <img
                     src={images[startIndex]}
                     alt={`Slide ${startIndex}`}
                     className="img-fluid"
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",  }}
                     onClick={() => handleImageClick(startIndex)}
                   />
                   <img
                     src={images[startIndex + 1]}
                     alt={`Slide ${startIndex + 1}`}
                     className="img-fluid mt-2"
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer", }}
                     onClick={() => handleImageClick(startIndex + 1)}
                   />
                 </div>
@@ -193,11 +194,11 @@ const Landing = () => {
                   className="img-fluid text-center"
                 />
           </div>
-          <div className="col-lg-6 ps-5">
+          <div className="col-lg-6 ps-lg-5 mt-lg-0 mt-4">
             <h2>Why Choose</h2>
             <p className="mb-0 mt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
             <div className=" mt-4">
-            <button className="primary-button text-center">Contact</button>
+            <Link className="primary-button text-center" to="/contactus">Contact</Link>
           </div>
           </div>
         </div>
@@ -240,11 +241,12 @@ const Landing = () => {
                         <iframe
                           id="videoPlayer"
                           ref={iframeRef}
-                          src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"
+                          src="https://www.youtube.com/embed/xrRDlOWR1OU?si=tM8aYaH5IVvXJPn-"
                           title="Video"
                           allow="autoplay"
                           allowFullScreen
                         ></iframe>
+                        
                       </div>
                     </div>
                   </div>
@@ -252,7 +254,7 @@ const Landing = () => {
               </div>
               <div className="text-end">
 
-                <a href="#" className=" theme-txt-color text-end">More Videos</a>
+                <a href="/wedding-flims" className=" theme-txt-color text-end">More Videos</a>
               </div>
             </div>
             <div className="col-lg-6">
@@ -264,7 +266,7 @@ const Landing = () => {
                      <input type="text" />
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mt-4 mt-lg-0">
                   <label htmlFor="" className="label">Date & Time</label>
                   <div className="mt-1">
                      <input type="text" />
@@ -302,7 +304,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      <section className="section-poadding">
+      {/* <section className="section-poadding">
       <Swiper
         className="instaSwiper"
         loop={true}
@@ -324,7 +326,6 @@ const Landing = () => {
           },
         }}
       >
-        {/* Static Slides */}
         <SwiperSlide>
           <img src={portrait} alt="Slide 1" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
         </SwiperSlide>
@@ -349,9 +350,8 @@ const Landing = () => {
         <SwiperSlide>
           <img src={portrait} alt="Slide 8" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
         </SwiperSlide>
-        {/* Add more SwiperSlide blocks as needed */}
       </Swiper>
-      </section>
+      </section> */}
     </div>
   );
 };

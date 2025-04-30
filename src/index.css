@@ -20,6 +20,10 @@ h3{
   font-family: 'Rose Angel', sans-serif;
   font-size: 30px;
 }
+h4{
+  font-family: 'Rose Angel', sans-serif;
+  font-size: 25px;
+}
 p{
   font-size: 16px;
   line-height: 30px;
@@ -40,6 +44,7 @@ p{
   color: #fff;
   border-radius: 5px;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 .primary-button:hover{
   padding: 7px 20px;
@@ -153,3 +158,90 @@ input:focus-visible{
   border: 1px solid #477E24;
   outline: #477E24;
 }
+
+.inner-header{
+  background-image: url(./assets/images/innerheader.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 350px;
+}
+.inner-header h1 {
+  backdrop-filter: blur(1px); /* Adjust the blur amount */
+  background-color: rgba(0, 0, 0, 0.2); /* Optional: semi-transparent background */
+  border-radius: 10px;
+  padding: 20px;
+}
+.sign{
+  font-family: 'Rose Angel', sans-serif;
+  font-size: 20px;
+}
+.portfolio-link{
+  transition: all 0.3s ease;
+}
+.portfolio-link:hover{
+  transform: scale(1.5);
+}
+.portfolio-link h4{
+ color: #000;
+ border-bottom: 1px dotted transparent;
+ padding-bottom: 5px;
+}
+.portfolio-link:hover h4{
+  color: #477E24;
+  border-bottom: 1px dotted #111;
+  width: auto;
+  display: table;
+  padding-bottom: 5px;
+  margin: 0 auto;
+ }
+ .mob-menu-toggle{
+  position: absolute;
+  right:10px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ @media (max-width: 991px) {
+
+  .navbar{
+    height: 60px;
+  }
+  .menu-navbar .nav-link:hover{
+    color: #477E24
+  }
+  .res-menu-bor{
+    border-top: 1px solid rgba(255,255,255, 0.2);
+    padding-top: 10px;
+    margin-top: 15px;
+  }
+  h2 {
+      font-size: 30px;
+  }
+  p {
+      font-size: 14px;
+      line-height: 28px;
+  }
+  .section-poadding {
+      padding-top: 25px;
+      padding-bottom: 25px;
+  }
+    h3 {
+      font-size: 25px;
+  }
+  .inner-header{
+    padding-top: 85px;
+  }
+  .inner-header h1{
+    padding: 10px;
+    font-size: 25px;
+  }
+  .portfolio-link h4{
+    font-size: 20px;
+  }
+ }
+ @media (max-width: 767px) {
+  .portfolio-link h4{
+    font-size: 16px;
+  }
+ }
