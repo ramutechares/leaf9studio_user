@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import portrait from "../assets/images/portrait.jpg";
-import selectedwork from "../assets/images/selected-works.png";
-import BgOne from "../assets/images/bgone.jpg";
-import phone from "../assets/images/phone.png";
-import wallet from "../assets/images/wallet.png";
-import event from "../assets/images/event.png";
-import { Modal } from "react-bootstrap";
+import tamil from "../assets/images/portfolio/landing/tamil.png";
+import christain from "../assets/images/portfolio/landing/christain.png";
+import telugu from "../assets/images/portfolio/landing/telugu.png";
+import pre from "../assets/images/portfolio/landing/pre.png";
+import baby from "../assets/images/portfolio/landing/baby.png";
 const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
   const [show, setShow] = useState(false);
@@ -41,7 +40,7 @@ const Portfolio = () => {
   return (
     <div>
       <section>
-        <div className="inner-header">
+        <div className="portfolio-bg">
           <h1 className="text-center text-white">Portfolio</h1>
         </div>
       </section>
@@ -52,33 +51,33 @@ const Portfolio = () => {
               <div className="row justify-content-center align-items-center">
                 <div className="col-6 col-lg-3 text-center p-2 p-md-4">
                   <a href="/tamil-wedding" className="text-decoration-none portfolio-link">
-                    <img src={portrait} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
+                    <img src={tamil} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
                     <h4 className="mt-4 mb-0">Tamil Wedding</h4>
                   </a>
                 </div>
                 <div className="col-6 col-lg-3 text-center p-2 p-md-4">
                   <a href="/Christian-wedding" className="text-decoration-none portfolio-link">
-                    <img src={portrait} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
+                    <img src={christain} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
                     <h4 className="mt-4 mb-0">Christian Wedding</h4>
                   </a>
                 </div>
                 <div className="col-6 col-lg-3 text-center p-2 p-md-4">
                   <a href="/telugu-wedding" className="text-decoration-none portfolio-link ">
-                    <img src={portrait} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
+                    <img src={telugu} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
                     <h4 className="mt-4 mb-0">Telugu Wedding</h4>
                   </a>
                 </div>
               </div>
               <div className="row justify-content-center align-items-center">
                 <div className="col-6 col-lg-3 text-center p-2 p-md-4">
-                  <a href="/bramin-wedding" className="text-decoration-none portfolio-link">
-                    <img src={portrait} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
-                    <h4 className="mt-4 mb-0">Bra-min Wedding</h4>
+                  <a href="/postpre-wedding" className="text-decoration-none portfolio-link">
+                    <img src={pre} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
+                    <h4 className="mt-4 mb-0">Post & Pre Wedding</h4>
                   </a>
                 </div>
                 <div className="col-6 col-lg-3 text-center p-2 p-md-4">
                   <a href="/newborn-wedding" className="text-decoration-none portfolio-link">
-                    <img src={portrait} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
+                    <img src={baby} alt="portrait" className="img-fluid" style={{ cursor: "pointer", maxHeight: '350px', height: '100%' }} />
                     <h4 className="mt-4 mb-0">New Born Portrait</h4>
                   </a>
                 </div>

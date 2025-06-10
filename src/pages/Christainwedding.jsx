@@ -2,25 +2,25 @@ import React, { useEffect, useRef, useState } from "react";
 import portrait from "../assets/images/portrait.jpg";
 
 import BgOne from "../assets/images/bgone.jpg";
+import ChOne from "../assets/images/portfolio/christain/ch-1.png";
+import ChTwo from "../assets/images/portfolio/christain/ch-2.png";
+import ChThree from "../assets/images/portfolio/christain/ch-3.png";
+import ChFour from "../assets/images/portfolio/christain/ch-4.png";
+import ChFive from "../assets/images/portfolio/christain/ch-5.png";
+import ChSix from "../assets/images/portfolio/christain/ch-6.png";
+import ChSeven from "../assets/images/portfolio/christain/ch-7.png";
+import ChEight from "../assets/images/portfolio/christain/ch-8.png";
 import { Modal } from "react-bootstrap";
 const Christainwedding = () => {
   const images = [
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
+      ChOne,
+      ChThree,
+      ChFour,
+      ChTwo,
+      ChFive,
+      ChSeven,
+      ChEight,
+      ChSix,
       
       
     ];
@@ -75,7 +75,7 @@ const Christainwedding = () => {
   return (
     <div>
       <section>
-        <div className="inner-header">
+        <div className="christain-bg">
           <h1 className="text-center text-white">Christain Wedding</h1>
         </div>
       </section>
@@ -83,7 +83,7 @@ const Christainwedding = () => {
         <div className="container">
           <div className="row mt-4">
             <div className="row">
-              {[0, 2, 4, 6,8,10,12,14].map((startIndex, col) => (
+              {[0, 2, 4, 6,].map((startIndex, col) => (
                 <div className="col-6 col-lg-3 px-1" key={col}>
                   <img
                     src={images[startIndex]}

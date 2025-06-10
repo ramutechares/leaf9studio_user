@@ -2,27 +2,25 @@ import React, { useEffect, useRef, useState } from "react";
 import portrait from "../assets/images/portrait.jpg";
 
 import BgOne from "../assets/images/bgone.jpg";
+import TeOne from "../assets/images/portfolio/telugu/te-1.png";
+import TeTwo from "../assets/images/portfolio/telugu/te-2.png";
+import TeThree from "../assets/images/portfolio/telugu/te-3.png";
+import TeFour from "../assets/images/portfolio/telugu/te-4.png";
+import TeFive from "../assets/images/portfolio/telugu/te-5.png";
+import TeSix from "../assets/images/portfolio/telugu/te-6.png";
+import TeSeven from "../assets/images/portfolio/telugu/te-7.png";
+import TeEight from "../assets/images/portfolio/telugu/te-8.png";
 import { Modal } from "react-bootstrap";
 const Teluguwedding = () => {
   const images = [
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      
-      
+      TeOne,
+      TeFive,
+      TeSix,
+      TeTwo,
+      TeThree,
+      TeSeven,
+      TeEight,
+      TeFour,
     ];
   
     const [showModal, setShowModal] = useState(false);
@@ -75,7 +73,7 @@ const Teluguwedding = () => {
   return (
     <div>
       <section>
-        <div className="inner-header">
+        <div className="telugu-bg">
           <h1 className="text-center text-white">Telugu Wedding</h1>
         </div>
       </section>
@@ -83,7 +81,7 @@ const Teluguwedding = () => {
         <div className="container">
           <div className="row mt-4">
             <div className="row">
-              {[0, 2, 4, 6,8,10,12,14].map((startIndex, col) => (
+              {[0, 2, 4, 6].map((startIndex, col) => (
                 <div className="col-6 col-lg-3 px-1" key={col}>
                   <img
                     src={images[startIndex]}

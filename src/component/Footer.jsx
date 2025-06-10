@@ -7,6 +7,14 @@ import facebook from '../assets/images/social-icons/facebook.png'
 import instagram from '../assets/images/social-icons/instagram.png'
 import pinterest from '../assets/images/social-icons/pinterest.png'
 import youtube from '../assets/images/social-icons/youtube.png'
+import instaOne from '../assets/images/instagram/insta-1.jpg'
+import instaTwo from '../assets/images/instagram/insta-2.jpg'
+import instaThree from '../assets/images/instagram/insta-3.jpg'
+import instaFour from '../assets/images/instagram/insta-4.jpg'
+import instaFive from '../assets/images/instagram/insta-5.jpg'
+import instaSix from '../assets/images/instagram/insta-6.jpg'
+import instaSeven from '../assets/images/instagram/insta-7.jpg'
+import instaEight from '../assets/images/instagram/insta-8.jpg'
 import portrait from "../assets/images/portrait.jpg";
 
 const Footer = () => {
@@ -23,7 +31,7 @@ const Footer = () => {
                 spaceBetween={10}
                 breakpoints={{
                     0: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                     },
                     768: {
                         slidesPerView: 5,
@@ -35,28 +43,28 @@ const Footer = () => {
             >
                 {/* Static Slides */}
                 <SwiperSlide>
-                    <img src={portrait} alt="Slide 1" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
+                    <img src={instaOne} alt="Slide 1" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={portrait} alt="Slide 2" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
+                    <img src={instaTwo} alt="Slide 2" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={portrait} alt="Slide 3" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
+                    <img src={instaThree} alt="Slide 3" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={portrait} alt="Slide 4" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
+                    <img src={instaFour} alt="Slide 4" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={portrait} alt="Slide 5" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
+                    <img src={instaFive} alt="Slide 5" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={portrait} alt="Slide 6" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
+                    <img src={instaSix} alt="Slide 6" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={portrait} alt="Slide 7" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
+                    <img src={instaSeven} alt="Slide 7" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={portrait} alt="Slide 8" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
+                    <img src={instaEight} alt="Slide 8" className="img-fluid rounded" style={{ height: '350px', objectFit: 'cover' }} />
                 </SwiperSlide>
                 {/* Add more SwiperSlide blocks as needed */}
             </Swiper>
@@ -70,22 +78,22 @@ const Footer = () => {
 
                             <ul className='list-unstyled d-flex mt-4'>
                                 <li>
-                                    <a href="/">
+                                    <a href="https://www.facebook.com/share/1LzzGTnvJM/?mibextid=wwXIfr">
                                         <img src={facebook} alt="facebook" />
                                     </a>
                                 </li>
                                 <li className='ms-3'>
-                                    <a href="/">
+                                    <a href="https://www.instagram.com/leaf9studios?igsh=bnRkaHhvYXNxNGFu&utm_source=qr">
                                         <img src={instagram} alt="instagram" />
                                     </a>
                                 </li>
                                 <li className='ms-3'>
-                                    <a href="/">
+                                    <a href="https://in.pinterest.com/leaf9studios">
                                         <img src={pinterest} alt="pinterest" />
                                     </a>
                                 </li>
                                 <li className='ms-3'>
-                                    <a href="/">
+                                    <a href="https://www.youtube.com/@leaf9studios272">
                                         <img src={youtube} alt="youtube" />
                                     </a>
                                 </li>
@@ -95,16 +103,16 @@ const Footer = () => {
                     </div>
                     <div className="col-md-3 mt-md-0 mt-5">
                         <p className="fs-14 theme-txt-color mb-0">Phone Number</p>
-                        <p>+9187966466</p>
+                        <p>+91 90953 07543</p>
                     </div>
                     <div className="col-md-3">
                         <p className="fs-14 theme-txt-color mb-0">Address</p>
-                        <p>Koodal Nager,Edwin Complex,
-                            Madurai,Tamilnadu</p>
+                        <p>Edwin Complex,Near ICICI Bank,Cokkalinga Nager,Koodal Nager,
+                            Madurai - 625018,Tamil Nadu</p>
                     </div>
                     <div className="col-md-3">
                         <p className="fs-14 theme-txt-color mb-0">Mail</p>
-                        <p>leaf9sttudio@gmail.com</p>
+                        <p>leaf9studios@gmail.com</p>
                     </div>
                     <p class="mt-4 text-body-secondary d-block d-lg-none">Copyright@leaf9studio.com</p>
                 </footer>

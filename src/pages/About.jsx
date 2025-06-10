@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
+import vinoth from "../assets/images/about/vinoth.png";
+import selectedwork from "../assets/images/about/selected-works.jpg";
+import smile from "../assets/images/about/smile.jpg";
+import videothumb from "../assets/images/about/video.png";
 import portrait from "../assets/images/portrait.jpg";
-import selectedwork from "../assets/images/selected-works.png";
+// import selectedwork from "../assets/images/selected-works.png";
 import BgOne from "../assets/images/bgone.jpg";
 import phone from "../assets/images/phone.png";
 import wallet from "../assets/images/wallet.png";
@@ -42,15 +46,15 @@ const About = () => {
   return (
     <div>
       <section>
-        <div className="inner-header">
+        <div className="about-header">
           <h1 className="text-center text-white">About Us</h1>
         </div>
       </section>
       <section className="section-poadding">
         <div className="container">
           <div className="row justify-content-between align-items-center">
-            <div className="col-lg-3">
-              <img src={portrait} alt="portrait" className="img-fluid" style={{ maxWidth: '250px', width: '100%' }} />
+            <div className="col-lg-4 text-center">
+              <img src={vinoth} alt="portrait" className="img-fluid" style={{ maxWidth: '300px', width: '100%' }} />
             </div>
             <div className="col-lg-8 mt-4 mt-lg-0">
               <h2>About Us</h2>
@@ -75,8 +79,8 @@ const About = () => {
       <section className="section-poadding">
         <div className="container">
           <div className="row align-items-center">
-          <div className="col-lg-4 order-lg-2">
-              <img src={selectedwork} alt="portrait" className="img-fluid"  />
+          <div className="col-lg-4 order-lg-2 text-center">
+              <img src={selectedwork} alt="selectedwork" className="img-fluid"  style={{ maxWidth: '300px', width: '100%' }}/>
             </div>
             <div className="col-lg-8 order-lg-1 mt-4 mt-lg-0">
               <h2>Selected Works</h2>
@@ -99,7 +103,7 @@ const About = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4">
-              <img src={selectedwork} alt="portrait" className="img-fluid" />
+              <img src={smile} alt="portrait" className="img-fluid"  style={{ maxWidth: '300px', width: '100%' }}/>
             </div>
             <div className="col-lg-8  mt-4 mt-lg-0">
               <h2>Whats Make us Smile</h2>
@@ -137,7 +141,7 @@ const About = () => {
           style={{ cursor: "pointer" }}
         >
           <img
-            src={BgOne}
+            src={videothumb}
             alt="Video Thumbnail"
             className="img-fluid rounded w-100"
           />
@@ -181,7 +185,7 @@ const About = () => {
                   <iframe
                     id="videoPlayer"
                     ref={iframeRef}
-                    src="https://www.youtube.com/embed/xrRDlOWR1OU?si=tM8aYaH5IVvXJPn-"
+                    src="https://www.youtube.com/embed/foH30jJGUEU?si=FvWgQ5F4k1Hc3TPJ"
                     title="Video"
                     allow="autoplay"
                     width="100"

@@ -2,27 +2,25 @@ import React, { useEffect, useRef, useState } from "react";
 import portrait from "../assets/images/portrait.jpg";
 
 import BgOne from "../assets/images/bgone.jpg";
+import babyOne from "../assets/images/portfolio/baby/baby-1.png";
+import babyTwo from "../assets/images/portfolio/baby/baby-2.png";
+import babyThree from "../assets/images/portfolio/baby/baby-3.png";
+import babyFour from "../assets/images/portfolio/baby/baby-4.png";
+import babyFive from "../assets/images/portfolio/baby/baby-5.png";
+import babySix from "../assets/images/portfolio/baby/baby-6.png";
+import babySeven from "../assets/images/portfolio/baby/baby-7.png";
+import babyEight from "../assets/images/portfolio/baby/baby-8.png";
 import { Modal } from "react-bootstrap";
 const Newbornwedding = () => {
   const images = [
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      portrait,
-      BgOne,
-      BgOne,
-      portrait,
-      
-      
+      babyOne,
+      babyFive,
+      babySix,
+      babyTwo,
+      babyThree,
+      babySeven,
+      babyEight,
+      babyFour,
     ];
   
     const [showModal, setShowModal] = useState(false);
@@ -75,7 +73,7 @@ const Newbornwedding = () => {
   return (
     <div>
       <section>
-        <div className="inner-header">
+        <div className="baby-bg">
           <h1 className="text-center text-white">Newborn Wedding</h1>
         </div>
       </section>
@@ -83,7 +81,7 @@ const Newbornwedding = () => {
         <div className="container">
           <div className="row mt-4">
             <div className="row">
-              {[0, 2, 4, 6,8,10,12,14].map((startIndex, col) => (
+              {[0, 2, 4, 6].map((startIndex, col) => (
                 <div className="col-6 col-lg-3 px-1" key={col}>
                   <img
                     src={images[startIndex]}

@@ -4,20 +4,34 @@ import { Autoplay } from "swiper/modules"; // <-- Import Autoplay module
 import "swiper/css"; // Required Swiper styles
 import { Modal } from "react-bootstrap";
 import BgOne from "../assets/images/bgone.jpg";
+import sliderOne from "../assets/images/landing-page/hero-banner/1.jpg";
+import sliderTwo from "../assets/images/landing-page/hero-banner/2.jpg";
+import sliderThree from "../assets/images/landing-page/hero-banner/3.jpg";
+import sliderFour from "../assets/images/landing-page/hero-banner/4.jpg";
+import sliderFive from "../assets/images/landing-page/hero-banner/5.jpg";
+import selectedOne from "../assets/images/landing-page/selected-works/1.jpg";
+import selectedTwo from "../assets/images/landing-page/selected-works/2.jpg";
+import selectedThree from "../assets/images/landing-page/selected-works/3.jpg";
+import selectedFour from "../assets/images/landing-page/selected-works/4.jpg";
+import selectedFive from "../assets/images/landing-page/selected-works/5.jpg";
+import selectedSix from "../assets/images/landing-page/selected-works/6.jpg";
+import selectedSeven from "../assets/images/landing-page/selected-works/7.jpg";
+import selectedEight from "../assets/images/landing-page/selected-works/8.jpg";
 import portrait from "../assets/images/portrait.jpg";
-import whychoose from "../assets/images/whychoose.png";
+import whychoose from "../assets/images/landing-page/whychoose.png";
+import videothumb from "../assets/images/landing-video-thumb.jpg";
 import { Link } from 'react-router-dom';
 
 const Landing = () => {
   const images = [
-    portrait,
-    BgOne,
-    BgOne,
-    portrait,
-    portrait,
-    BgOne,
-    BgOne,
-    portrait,
+    selectedSix,
+    selectedOne,
+    selectedTwo,
+    selectedFive,
+    selectedSeven,
+    selectedThree,
+    selectedFour,
+    selectedEight,
   ];
 
   const [showModal, setShowModal] = useState(false);
@@ -80,16 +94,19 @@ const Landing = () => {
           modules={[Autoplay]} // <- Attach autoplay module
         >
           <SwiperSlide>
-            <img src={BgOne} alt="Slide 1" className="img-fluid" />
+            <img src={sliderOne} alt="Slide 1" className="img-fluid" width="1200" height="628" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={BgOne} alt="Slide 2" className="img-fluid" />
+            <img src={sliderTwo} alt="Slide 2" className="img-fluid"  width="1200" height="628" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={BgOne} alt="Slide 3" className="img-fluid" />
+            <img src={sliderThree} alt="Slide 3" className="img-fluid"  width="1200" height="628" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={BgOne} alt="Slide 4" className="img-fluid" />
+            <img src={sliderFour} alt="Slide 4" className="img-fluid"   width="1200" height="628"/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sliderFive} alt="Slide 4" className="img-fluid"  width="1200" height="628" />
           </SwiperSlide>
         </Swiper>
       </section>
@@ -212,7 +229,7 @@ const Landing = () => {
               {/* Thumbnail with Play Button */}
               <div className="position-relative d-inline-block mb-3" onClick={openModal} style={{ cursor: 'pointer' }}>
                 <img
-                  src={BgOne}
+                  src={videothumb}
                   alt="Video Thumbnail"
                   className="img-fluid rounded"
                 />
@@ -241,7 +258,7 @@ const Landing = () => {
                         <iframe
                           id="videoPlayer"
                           ref={iframeRef}
-                          src="https://www.youtube.com/embed/xrRDlOWR1OU?si=tM8aYaH5IVvXJPn-"
+                          src="https://www.youtube.com/embed/AcHq8FGvb3I?si=2iEK5HjCoszw8Wiy"
                           title="Video"
                           allow="autoplay"
                           allowFullScreen
