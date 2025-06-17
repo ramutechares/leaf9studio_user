@@ -20,7 +20,7 @@
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
   <script type="module" src="/src/main.jsx"></script>
-  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <script>
     $(document).ready(function () {
@@ -53,9 +53,11 @@
     const videoModal = document.getElementById('videoModal');
     const videoPlayer = document.getElementById('videoPlayer');
 
-    videoModal.addEventListener('hidden.bs.modal', function () {
-      videoPlayer.src = videoPlayer.src; // Reset to stop video
-    });
+    if (videoModal && videoPlayer) {
+      videoModal.addEventListener('hidden.bs.modal', function () {
+        videoPlayer.src = videoPlayer.src; // Reset to stop video
+      });
+    }
 
   </script>
 </body>

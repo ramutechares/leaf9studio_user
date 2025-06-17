@@ -1,15 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
+import Weddingmenu from "../component/Weddingmenu";
 import portrait from "../assets/images/portrait.jpg";
 
 import BgOne from "../assets/images/bgone.jpg";
-import TeOne from "../assets/images/portfolio/telugu/te-1.png";
-import TeTwo from "../assets/images/portfolio/telugu/te-2.png";
-import TeThree from "../assets/images/portfolio/telugu/te-3.png";
-import TeFour from "../assets/images/portfolio/telugu/te-4.png";
-import TeFive from "../assets/images/portfolio/telugu/te-5.png";
-import TeSix from "../assets/images/portfolio/telugu/te-6.png";
-import TeSeven from "../assets/images/portfolio/telugu/te-7.png";
-import TeEight from "../assets/images/portfolio/telugu/te-8.png";
+import TeOne from "../assets/images/portfolio/telugu/te-1.jpg";
+import TeTwo from "../assets/images/portfolio/telugu/te-2.jpg";
+import TeThree from "../assets/images/portfolio/telugu/te-3.jpg";
+import TeFour from "../assets/images/portfolio/telugu/te-4.jpg";
+import TeFive from "../assets/images/portfolio/telugu/te-5.jpg";
+import TeSix from "../assets/images/portfolio/telugu/te-6.jpg";
+import TeSeven from "../assets/images/portfolio/telugu/te-7.jpg";
+import TeEight from "../assets/images/portfolio/telugu/te-8.jpg";
 import { Modal } from "react-bootstrap";
 const Teluguwedding = () => {
   const images = [
@@ -80,6 +81,7 @@ const Teluguwedding = () => {
       <section className="section-poadding">
         <div className="container">
           <div className="row mt-4">
+              <Weddingmenu />
             <div className="row">
               {[0, 2, 4, 6].map((startIndex, col) => (
                 <div className="col-6 col-lg-3 px-1" key={col}>

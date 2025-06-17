@@ -1,15 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
+import Weddingmenu from "../component/Weddingmenu";
 import portrait from "../assets/images/portrait.jpg";
 
 import BgOne from "../assets/images/bgone.jpg";
-import ChOne from "../assets/images/portfolio/christain/ch-1.png";
-import ChTwo from "../assets/images/portfolio/christain/ch-2.png";
-import ChThree from "../assets/images/portfolio/christain/ch-3.png";
-import ChFour from "../assets/images/portfolio/christain/ch-4.png";
+import ChOne from "../assets/images/portfolio/christain/ch-1.jpg";
+import ChTwo from "../assets/images/portfolio/christain/ch-2.jpg";
+import ChThree from "../assets/images/portfolio/christain/ch-3.jpg";
+import ChFour from "../assets/images/portfolio/christain/ch-4.jpg";
 import ChFive from "../assets/images/portfolio/christain/ch-5.png";
 import ChSix from "../assets/images/portfolio/christain/ch-6.png";
-import ChSeven from "../assets/images/portfolio/christain/ch-7.png";
-import ChEight from "../assets/images/portfolio/christain/ch-8.png";
+import ChSeven from "../assets/images/portfolio/christain/ch-7.jpg";
+import ChEight from "../assets/images/portfolio/christain/ch-8.jpg";
 import { Modal } from "react-bootstrap";
 const Christainwedding = () => {
   const images = [
@@ -82,6 +83,7 @@ const Christainwedding = () => {
       <section className="section-poadding">
         <div className="container">
           <div className="row mt-4">
+             <Weddingmenu />
             <div className="row">
               {[0, 2, 4, 6,].map((startIndex, col) => (
                 <div className="col-6 col-lg-3 px-1" key={col}>

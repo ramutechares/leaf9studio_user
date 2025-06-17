@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Weddingmenu from "../component/Weddingmenu";
 import portrait from "../assets/images/portrait.jpg";
 
 import BgOne from "../assets/images/bgone.jpg";
@@ -82,6 +83,7 @@ const PostPreWedding = () => {
       <section className="section-poadding">
         <div className="container">
           <div className="row mt-4">
+            <Weddingmenu />
             <div className="row">
               {[0, 2, 4, 6].map((startIndex, col) => (
                 <div className="col-6 col-lg-3 px-1" key={col}>
